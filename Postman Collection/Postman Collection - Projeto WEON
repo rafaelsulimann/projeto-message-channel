@@ -1,0 +1,851 @@
+{
+	"info": {
+		"_postman_id": "51a15a09-bc77-422c-a809-d8db92ced44c",
+		"name": "PROJETO-WEON",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "SIGN UP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"henriquesulimann\",\r\n    \"fullName\": \"Henrique Xavier Sulimann\",\r\n    \"email\": \"ricoques@gmail.com\",\r\n    \"phone\": \"51996589658\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/auth/signup",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "USER - GET ALL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/users",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "creationDate,desc",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "sulimannrafael@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "userName",
+									"value": "rafa",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "51981658626",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/users/4ae31b85-1625-4836-bee6-e7f7e354add8",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"4ae31b85-1625-4836-bee6-e7f7e354add8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/users/4ae31b85-1625-4836-bee6-e7f7e354add8",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"4ae31b85-1625-4836-bee6-e7f7e354add8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USER - UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"Rafael Xavier Sulimann\",\r\n    \"email\": \"rafitios@gmail.com\",\r\n    \"phone\": \"51981658626\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/users/4ae31b85-1625-4836-bee6-e7f7e354add8",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"4ae31b85-1625-4836-bee6-e7f7e354add8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CHAT CHANNEL",
+			"item": [
+				{
+					"name": "CHAT MESSAGE",
+					"item": [
+						{
+							"name": "CHAT MESSAGE - GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/chatchannels/057b9756-c6d5-4db0-b358-3d6f12adc240",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"chatchannels",
+										"057b9756-c6d5-4db0-b358-3d6f12adc240"
+									],
+									"query": [
+										{
+											"key": "size",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "creationDate, asc",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "0",
+											"disabled": true
+										},
+										{
+											"key": "messageStatus",
+											"value": "ENVIADA",
+											"disabled": true
+										},
+										{
+											"key": "message",
+											"value": "oi",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CHAT MESSAGE - GET BY ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/chatchannels/057b9756-c6d5-4db0-b358-3d6f12adc240/692997b5-8c6d-4088-a7b4-58156fd00fa6",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"chatchannels",
+										"057b9756-c6d5-4db0-b358-3d6f12adc240",
+										"692997b5-8c6d-4088-a7b4-58156fd00fa6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CHAT MESSAGE - DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/chatchannels/057b9756-c6d5-4db0-b358-3d6f12adc240/692997b5-8c6d-4088-a7b4-58156fd00fa6",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"chatchannels",
+										"057b9756-c6d5-4db0-b358-3d6f12adc240",
+										"692997b5-8c6d-4088-a7b4-58156fd00fa6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CHAT MESSAGE - CREATE",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"message\": \"Deu certo!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/chatchannels/057b9756-c6d5-4db0-b358-3d6f12adc240",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"chatchannels",
+										"057b9756-c6d5-4db0-b358-3d6f12adc240"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CHAT CHANNEL - GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/chatchannels",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"chatchannels"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "lastMessageDate, asc",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "toUser",
+									"value": "henriquesulimann",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHAT CHANNEL - DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/chatchannels/057b9756-c6d5-4db0-b358-3d6f12adc240",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"chatchannels",
+								"057b9756-c6d5-4db0-b358-3d6f12adc240"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CHAT CHANNEL - CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"toUser\": \"henriquesulimann\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/chatchannels",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"chatchannels"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMAIL CHANNEL",
+			"item": [
+				{
+					"name": "EMAIL MESSAGE",
+					"item": [
+						{
+							"name": "EMAIL MESSAGE - GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/emailchannels/1f57d2b1-f53e-4e15-96f5-95de30e65e0e",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"emailchannels",
+										"1f57d2b1-f53e-4e15-96f5-95de30e65e0e"
+									],
+									"query": [
+										{
+											"key": "size",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "creationDate, desc",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "0",
+											"disabled": true
+										},
+										{
+											"key": "messageStatus",
+											"value": "RECEBIDA",
+											"disabled": true
+										},
+										{
+											"key": "message",
+											"value": "boa tarde",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMAIL MESSAGE - GET BY ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/emailchannels/1f57d2b1-f53e-4e15-96f5-95de30e65e0e/c4c7bd1b-a47e-45a6-b72e-db4958a0dcbe",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"emailchannels",
+										"1f57d2b1-f53e-4e15-96f5-95de30e65e0e",
+										"c4c7bd1b-a47e-45a6-b72e-db4958a0dcbe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMAIL MESSAGE - DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/emailchannels/1f57d2b1-f53e-4e15-96f5-95de30e65e0e/c4c7bd1b-a47e-45a6-b72e-db4958a0dcbe",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"emailchannels",
+										"1f57d2b1-f53e-4e15-96f5-95de30e65e0e",
+										"c4c7bd1b-a47e-45a6-b72e-db4958a0dcbe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EMAIL MESSAGE - CREATE",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"message\": \"Envio de teste!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/emailchannels/1f57d2b1-f53e-4e15-96f5-95de30e65e0e",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"emailchannels",
+										"1f57d2b1-f53e-4e15-96f5-95de30e65e0e"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "EMAIL CHANNEL - GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/emailchannels",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"emailchannels"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "lastEmailDate, asc",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "toEmail",
+									"value": "ricoques@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EMAIL CHANNEL - DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/emailchannels/1f57d2b1-f53e-4e15-96f5-95de30e65e0e",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"emailchannels",
+								"1f57d2b1-f53e-4e15-96f5-95de30e65e0e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EMAIL CHANNEL - CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"toEmail\": \"ricoques@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/emailchannels",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"emailchannels"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VOICE CHANNEL",
+			"item": [
+				{
+					"name": "VOICE MESSAGE",
+					"item": [
+						{
+							"name": "VOICE MESSAGE - GET ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/voicechannels/961df53e-2dc0-4efa-9a13-9de52f900564",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"voicechannels",
+										"961df53e-2dc0-4efa-9a13-9de52f900564"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "VOICE MESSAGE - GET BY ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/voicechannels/961df53e-2dc0-4efa-9a13-9de52f900564/f470547f-8874-4985-88e2-e4341d414317",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"voicechannels",
+										"961df53e-2dc0-4efa-9a13-9de52f900564",
+										"f470547f-8874-4985-88e2-e4341d414317"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "VOICE MESSAGE - DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/voicechannels/961df53e-2dc0-4efa-9a13-9de52f900564/f470547f-8874-4985-88e2-e4341d414317",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"voicechannels",
+										"961df53e-2dc0-4efa-9a13-9de52f900564",
+										"f470547f-8874-4985-88e2-e4341d414317"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "VOICE MESSAGE - CREATE",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"message\": \"mensagem de voz. (40 sec)\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/voicechannels/961df53e-2dc0-4efa-9a13-9de52f900564",
+									"protocol": "https",
+									"host": [
+										"projeto-weon",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"rafaelsulimann",
+										"voicechannels",
+										"961df53e-2dc0-4efa-9a13-9de52f900564"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "VOICE CHANNEL - GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/voicechannels",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"voicechannels"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "lastMessageDate, desc",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "toPhone",
+									"value": "51981658626",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VOICE CHANNEL - DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/voicechannels/961df53e-2dc0-4efa-9a13-9de52f900564",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"voicechannels",
+								"961df53e-2dc0-4efa-9a13-9de52f900564"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VOICE CHANNEL - CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"toPhone\": \"51996589658\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projeto-weon.herokuapp.com/rafaelsulimann/voicechannels",
+							"protocol": "https",
+							"host": [
+								"projeto-weon",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"rafaelsulimann",
+								"voicechannels"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
