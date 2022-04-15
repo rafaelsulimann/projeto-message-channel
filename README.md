@@ -51,11 +51,11 @@ Porém só será possível acessar a API através dos ENDPOINTS, e para isso ser
 
 - Para facilitar para o **USUÁRIO** não precisar ficar **DIGITANDO** os **ENDPOINTS** que estão expostos, na **PASTA “POSTMAN COLLECTION”** do projeto, contém um **COLEÇÃO COMPLETA** dos **ENDPOINTS** disponíveis, e vem até com os **FILTROS** disponíveis. Lembrando que os **FILTROS** podem ser **CONFIGURADOS** pelo **PROPRIO USUÁRIO** de acordo com o que ele deseja filtrar.
 
-![foto1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ffff9fd4-5054-4e32-9a04-f49268c8a4ff/foto1.png)
+![foto1](https://user-images.githubusercontent.com/97992737/163560612-272eb74f-4c63-44b3-8c2e-b10a0e473e71.png)
 
 - Agora vamos entrar no **POSTMAN** e **IMPORTAR** esta **COLEÇÃO**.
 
-![foto2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a1af2dc5-57d0-46e1-b0f7-28a2c95ae5de/foto2.png)
+![foto2](https://user-images.githubusercontent.com/97992737/163560650-fb3756ab-021a-475e-b248-866e20e960ad.png)
 
 - E depois selecionar a **COLEÇÃO** do projeto e então você já terá **ACESSO** a todos os **ENDPOINTS** disponíveis deste projeto.
 
@@ -67,12 +67,12 @@ Porém só será possível acessar a API através dos ENDPOINTS, e para isso ser
 
 - Para fazer isso, basta abrir a **PASTA** da **COLEÇÃO** do **POSTMAN** chamada **“AUTH”**, e dentro dele terá uma **REQUISIÇÃO** do tipo **POST**.
 
-![foto3.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9223ac4-ea8d-4f45-9519-da7b58cea0b8/foto3.png)
+![foto3](https://user-images.githubusercontent.com/97992737/163560668-da217c54-5c95-445d-af84-752a8ffdc023.png)
 
 - Clicando nela, **AUTOMATICAMENTE** o **POSTMAN** irá nos **REDIRECIONAR** para o **ENDPOINT** específico para **CRIAR USUÁRIOS**.
 - Após isto, precisamos ir em **BODY → RAW,** e aqui já terá um **MOLDE** pronto para você **ADICIONAR** um **USUÁRIO**, podendo apenas alterar as **INFORMAÇÕES** dos **ATRIBUTOS** que estiverem aparecendo na tela do **RAW**.
 
-![foto4.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7140ac91-0bd3-42ba-83e8-65d712da8c50/foto4.png)
+![foto4](https://user-images.githubusercontent.com/97992737/163560690-94ee0182-9374-48f1-a69a-297b05d27e07.png)
 
 ## 2) CRIAR CANAIS DE COMUNICAÇÃO COM OUTRO USUÁRIO
 
@@ -86,19 +86,19 @@ Porém só será possível acessar a API através dos ENDPOINTS, e para isso ser
 - Outro ponto **MUITO IMPORTANTE** é que agora, precisaremos **INCLUIR** na **URL** o **USERNAME** do **USUÁRIO** que estamos atuando no momento.
 - Para então **CRIAR** na **PRÁTICA**, podemos **ABRIR** a pasta da **COLEÇÃO** do **POSTMAN** relacionado ao **TIPO** de **COMUNICAÇÃO** que desejamos fazer, e clicar em **CREATE**.
 
-![foto5.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24fda30b-6a39-4bf8-9a81-29381e53331a/foto5.png)
+![foto5](https://user-images.githubusercontent.com/97992737/163560717-633aadc5-64cb-4471-a71a-9c83f1615dc5.png)
 
 ### 2.1) CHAT CHANNEL
 
-![foto6.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d3684484-7b01-4e3b-974b-004f449499bb/foto6.png)
+![foto6](https://user-images.githubusercontent.com/97992737/163560756-c6a806af-a17c-4698-bf40-440169fce2dd.png)
 
 ### 2.2) EMAIL CHANNEL
 
-![foto7.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0d909ee3-da17-4976-82ce-2cc48c8211c8/foto7.png)
+![foto7](https://user-images.githubusercontent.com/97992737/163560774-7518e15e-a878-4c9c-86de-d72ffa2ebc4e.png)
 
 ### 2.3) VOICE CHANNEL
 
-![foto8.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef3910e7-61c0-4c8f-b564-c9f27f9e47fa/foto8.png)
+![foto8](https://user-images.githubusercontent.com/97992737/163560796-eaf6d0e0-bece-41a2-bbca-9ba46db84d0f.png)
 
 ## 3) ENVIAR MENSAGEM PARA UM USUÁRIO JÁ CONECTADO POR ALGUM DOS CANAIS
 
@@ -110,32 +110,32 @@ Porém só será possível acessar a API através dos ENDPOINTS, e para isso ser
 
 - Suponhamos então que **CRIAMOS** um **CONEXÃO** com o **USUÁRIO** via **CHAT CHANNEL**, vamos então dar um **GET ALL** neste canal para descobrirmos o **ID** da conexão.
 
-![foto9.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4e7708f-afa0-446a-ad92-dfee6fbd4963/foto9.png)
+![foto9](https://user-images.githubusercontent.com/97992737/163560840-0649386b-ab4d-4bda-af5d-6096dd4726bd.png)
 
-![foto10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b7fec021-2b84-40be-abc2-2f33fef4a476/foto10.png)
+![foto10](https://user-images.githubusercontent.com/97992737/163560863-3d9b847c-e799-4c7b-99dd-5d65074ec88b.png)
 
 - Neste caso, como já havíamos comentado, já deixamos alguns **OBJETOS** prontos no **BANCO DE DADOS** para **FINS DE TESTE**, mas você também pode **CRIAR** o seu, através dos **ENDPOINTS.**
     - Repare que nos **PARAMS** da **REQUISIÇÃO**, já temos **DISPONÍVEIS** os **FILTROS** que podemos ser **UTILIZADOS** para a **CONSULTA.**
     - Por exemplo, podemos **ORDENAR** da **MENSAGEM** mais **RECENTE** para a mais **ANTIGA**, basta clicarmos em **SORT** e modificarmos o **VALUE** para **DESC**.
     
-    ![foto11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/72141e52-2803-4562-b86f-061a92c70a5a/foto11.png)
+    ![foto11](https://user-images.githubusercontent.com/97992737/163560883-e4a29835-185d-4553-aa24-ca26a3013ac3.png)
     
 - Então vamos **COPIAR** o **CHAT CHANNEL ID**, para que possamos **ENVIAR** uma **MENSAGEM** para este **USUÁRIO**.
 - Feito isto, vamos então entrar na **PASTA** da **COLEÇÃO** do **POSTMAN** chamada de **CHAT MESSAGE**, e clicar na **REQUISIÇÃO** do tipo **POST - CREATE**.
 
-![foto12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/165633e4-ccf2-428f-88ec-ca3ff66b1c98/foto12.png)
+![foto12](https://user-images.githubusercontent.com/97992737/163560902-b1102cb6-ebd2-4a20-9911-7562ae4416f1.png)
 
 - E agora fica mais claro do **PORQUÊ** precisamos **COPIAR** o **CHAT CHANNEL ID**...]
 - Pois precisamos **INSERIR** este **ID** na **URL** da **REQUISIÇÃO** para que seja possível **CONECTAR** e enviar a **MENSAGEM** para o **CANAL** e o **USUÁRIO CORRETO**.
 
-![foto13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4c743913-abc5-4287-bf46-55212e6b713f/foto13.png)
+![foto13](https://user-images.githubusercontent.com/97992737/163560927-8f88af3b-22c3-4c11-96b9-2571766bdb04.png)
 
 - Depois de **INSERIDO** a **URL** correta, devemos então **ENVIAR** a **MENSAGEM** via **BODY** da **REQUISIÇÃO** e enviar a **MENSAGEM** desejada.
 - Quando nós **ENVIARMOS** esta **MENSAGEM**, ela **AUTOMATICAMENTE** irá **CRIAR** um novo **CANAL** de **COMUNICAÇÃO**, porém agora para o **USUÁRIO DESTINOS** com o **USUÁRIO** que enviou a **MENSAGEM**, porém, caso ele **JÁ TENHA** um **CANAL** de **COMUNICAÇÃO** criado com este **USUÁRIO**, ele irá apenas **INSERIR** a **MENSAGEM** neste **CANAL** existente.
 - No caso, no exemplo acima, nós enviamos uma **MENSAGEM** para o **USUÁRIO** chamado **“henriquesulimann”**, podemos então buscar no **CANAL DE CAOMUNICAÇÃO** de **CHAT**, para verificar se de fato foi **CRIADO** ou **ADICIONADO** a **MENSAGEM** para ele.
 - Para isso, vamos **NOVAMENTE** dar um **GET ALL** em **CHAT CHANNEL**, porém, agora alterando a **URL** para direcionar para o **“henriquesulimann”**.
 
-![foto14.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/078e5b1b-5996-45a2-aa21-ad7313c8d015/foto14.png)
+![foto14](https://user-images.githubusercontent.com/97992737/163560948-be1bb087-31a3-410e-a86c-af51751e4852.png)
 
 - Então como podemos ver, de fato foi criado um **NOVO CANAL** com o **rafaelsulimann** que foi o **USUÁRIO** que enviou a **MENSAGEM**.
 - Porém agora, ajustando as **INFORMAÇÕES** para a visão do **henriquesulimann**, como no caso do **ATRIBUTO** de **toUser**.
