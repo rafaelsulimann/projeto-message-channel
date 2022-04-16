@@ -131,6 +131,7 @@ Porém só será possível acessar a API através dos ENDPOINTS, e para isso ser
 ![foto13](https://user-images.githubusercontent.com/97992737/163560927-8f88af3b-22c3-4c11-96b9-2571766bdb04.png)
 
 - Depois de **INSERIDO** a **URL** correta, devemos então **ENVIAR** a **MENSAGEM** via **BODY** da **REQUISIÇÃO** e enviar a **MENSAGEM** desejada.
+### 3.3) SINCRONIA DE DADOS
 - Quando nós **ENVIARMOS** esta **MENSAGEM**, ela **AUTOMATICAMENTE** irá **CRIAR** um novo **CANAL** de **COMUNICAÇÃO**, porém agora para o **USUÁRIO DESTINOS** com o **USUÁRIO** que enviou a **MENSAGEM**, porém, caso ele **JÁ TENHA** um **CANAL** de **COMUNICAÇÃO** criado com este **USUÁRIO**, ele irá apenas **INSERIR** a **MENSAGEM** neste **CANAL** existente.
 - No caso, no exemplo acima, nós enviamos uma **MENSAGEM** para o **USUÁRIO** chamado **“henriquesulimann”**, podemos então buscar no **CANAL DE CAOMUNICAÇÃO** de **CHAT**, para verificar se de fato foi **CRIADO** ou **ADICIONADO** a **MENSAGEM** para ele.
 - Para isso, vamos **NOVAMENTE** dar um **GET ALL** em **CHAT CHANNEL**, porém, agora alterando a **URL** para direcionar para o **“henriquesulimann”**.
@@ -139,6 +140,13 @@ Porém só será possível acessar a API através dos ENDPOINTS, e para isso ser
 
 - Então como podemos ver, de fato foi criado um **NOVO CANAL** com o **rafaelsulimann** que foi o **USUÁRIO** que enviou a **MENSAGEM**.
 - Porém agora, ajustando as **INFORMAÇÕES** para a visão do **henriquesulimann**, como no caso do **ATRIBUTO** de **toUser**.
+- Ao **CLICARMOS** no **LINK** que aparece logo abaixo do **CHAT CHANNEL**, nós seremos redirecionados para o **LINK** da **CONVERSA**, onde contém **TODAS AS MENSAGENS**, tanto as enviadas quanto as recebidas.
+
+![foto15](https://user-images.githubusercontent.com/97992737/163663978-ec24c8a7-f06f-44c8-8162-d2cf6c247548.jpg)
+
+- E quando **CLICARMOS** em **SEND**, iremos filtrar por todas as mensagens da conversa.
+
+![foto16](https://user-images.githubusercontent.com/97992737/163664007-594f6cf7-6df5-497c-81d1-8e5c335e4580.jpg)
 
 # CONCLUSÃO
 
